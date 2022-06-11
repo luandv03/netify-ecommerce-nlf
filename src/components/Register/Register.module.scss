@@ -1,0 +1,117 @@
+
+.wrapper {
+    display:flex;
+    justify-content:center;
+}
+
+.container {
+    width:1124px;
+}
+
+.form {
+    width: 400px;
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+}
+
+.header {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight:400;
+    font-family: 'Montserrat', sans-serif;
+    color: #1c1b1b;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 15px;
+    font-weight:400;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: #1c1b1b;
+}
+
+.form__item {
+    position:relative;
+    width: 100%;
+    height: 46px;
+    margin-bottom: 20px;
+
+    .input {
+        width: 100%;
+        height: 42px;
+        font-family: 'Montserrat', sans-serif;
+        color: #1c1b1b;
+        outline:none;
+        font-size: 16px;
+        border:1px solid #dddddd;
+        padding:0 12px;
+        box-sizing: border-box;
+        transition: border-color .1s ease-in-out;
+    
+    }
+
+    .input:not(:placeholder-shown) ~ .label {
+        display: inline-block;
+    }
+
+   
+}
+
+.label {
+    display:none;
+    user-select: none;
+    position: absolute;
+    top:-10px;
+    left:10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #a98585;
+    font-size: 14px;
+    padding: 0 3px;
+    background-color:#ffff;
+}
+
+.surround__item {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%,55%);
+    cursor: pointer;
+}
+
+.btn-submit {
+    width: 100%;
+    height: 42px;
+    cursor: pointer;
+    background-color:#1c1b1b;
+    color:white;
+    font-size:18px;
+    font-weight:300;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    margin-top: 9px;
+
+    &:hover {
+        background-color: transparent;
+        color:#1c1b1b;
+        transition: color .45s cubic-bezier(.785,.135,.15,.86),border .45s cubic-bezier(.785,.135,.15,.86);
+    }
+}
+
+.error__message {
+    font-size:13px;
+    margin: 0;
+    color: rgb(238, 98, 98);
+    font-weight:300;
+    font-family: 'Montserrat', sans-serif;
+}

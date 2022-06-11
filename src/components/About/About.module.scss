@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width:1124px;
+
+    h1 {
+        text-align: center;
+        margin: 30px 0 50px 0;
+        color: rgb(90, 72, 72);
+    }
+
+    span {
+        line-height:25px;
+    }
+}
